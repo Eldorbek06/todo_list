@@ -44,26 +44,24 @@ label input {
 
 .box {
     width: 282px;
-    height: 90px;
+    height: fit-content;
     background: #f0f0f0;
     border: 1px solid #007fff;
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 15px;
     padding: 10px;
     user-select: none;
     transition: all .3s ease;
-    pointer-events: all;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 15px;
-    padding: 10px;
+    gap: 8px;
 }
 
 h2 {
@@ -72,10 +70,12 @@ h2 {
     cursor: pointer;
     transition: all .3s ease;
 }
-h2:hover{
+
+h2:hover {
     color: red;
 }
-.h2_done{
+
+.h2_done {
     text-decoration: line-through 2px red;
 }
 
@@ -86,10 +86,6 @@ span {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.55);
     font-style: italic;
-}
-
-.right {
-    padding: 10px;
 }
 
 .right button {
@@ -103,10 +99,9 @@ span {
     height: 20px;
     cursor: pointer;
     transition: .3s ease;
-    pointer-events: auto;
 }
 
-.right button:hover{
+.right button:hover {
     scale: 1.2;
 }
 
@@ -119,18 +114,18 @@ span {
     width: 100%;
     min-height: 250px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     transition: .3s ease;
 }
 
-.cont_bg{
+.cont_bg {
     background: url('./img/nothing_todo.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-.inp_empty{
+.inp_empty {
     border: solid 2px red;
 }
